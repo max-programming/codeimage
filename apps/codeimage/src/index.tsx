@@ -1,3 +1,4 @@
+import {StateProvider} from '@codeimage/atomic-state';
 import {createI18nContext, I18nContext, useI18n} from '@codeimage/locale';
 import {getAuth0State} from '@codeimage/store/auth/auth0';
 import {getRootEditorStore} from '@codeimage/store/editor';
@@ -9,21 +10,13 @@ import {
   SnackbarHost,
   ThemeProviderProps,
 } from '@codeimage/ui';
-import '@codeimage/ui/themes/lightTheme';
 import {darkGrayScale} from '@codeimage/ui/themes/darkTheme';
-import {enableUmami} from '@core/constants/umami';
+import '@codeimage/ui/themes/lightTheme';
 import {OverlayProvider} from '@solid-aria/overlays';
 import {Router, useRoutes} from '@solidjs/router';
+import {snackbarHostAppStyleCss} from '@ui/snackbarHostAppStyle.css';
 import {setElementVars} from '@vanilla-extract/dynamic';
-import {
-  Component,
-  createEffect,
-  lazy,
-  on,
-  onMount,
-  Show,
-  Suspense,
-} from 'solid-js';
+import {Component, createEffect, lazy, on, Show, Suspense} from 'solid-js';
 import {render} from 'solid-js/web';
 import './assets/styles/app.scss';
 import {SidebarPopoverHost} from './components/PropertyEditor/SidebarPopoverHost';
@@ -120,8 +113,6 @@ export function Bootstrap() {
     },
   ]);
 
-  onMount(() => enableUmami());
-
   createEffect(
     on(mode, theme => {
       const scheme = document.querySelector('meta[name="theme-color"]');
@@ -139,7 +130,7 @@ export function Bootstrap() {
     <Scaffold>
       <CodeImageThemeProvider tokens={tokens} theme={uiStore.themeMode}>
         <OverlayProvider>
-          <SnackbarHost />
+          <SnackbarHost containerClassName={snackbarHostAppStyleCss} />
           <Router>
             <Suspense>
               <Routes />
@@ -158,7 +149,9 @@ getAuth0State()
     render(
       () => (
         <I18nContext.Provider value={i18n}>
-          <Bootstrap />
+          <StateProvider>
+            <Bootstrap />
+          </StateProvider>
         </I18nContext.Provider>
       ),
       document.getElementById('root') as HTMLElement,

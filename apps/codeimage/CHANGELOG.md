@@ -1,5 +1,66 @@
 # @codeimage/app
 
+## 1.1.1
+
+### Patch Changes
+
+- [#443](https://github.com/riccardoperra/codeimage/pull/443) [`097c0201`](https://github.com/riccardoperra/codeimage/commit/097c02013a5f2f84f97fe7f853a204508de9998d) Thanks [@riccardoperra](https://github.com/riccardoperra)! - fix(app): change file extension on language change
+
+## 1.1.0
+
+### Minor Changes
+
+- [`513c6aa6`](https://github.com/riccardoperra/codeimage/commit/513c6aa66356ef43d96cdd18906b13bf5d8218da) Thanks [@riccardoperra](https://github.com/riccardoperra)! - Add action toolbar and randomize, copy to clipboard and prettier format actions
+
+### Patch Changes
+
+- [#438](https://github.com/riccardoperra/codeimage/pull/438) [`7f41e9d8`](https://github.com/riccardoperra/codeimage/commit/7f41e9d85a38de540f1cd23f763bf22d73c93812) Thanks [@riccardoperra](https://github.com/riccardoperra)! - feat: refactor state management
+
+- Updated dependencies [[`7f41e9d8`](https://github.com/riccardoperra/codeimage/commit/7f41e9d85a38de540f1cd23f763bf22d73c93812), [`513c6aa6`](https://github.com/riccardoperra/codeimage/commit/513c6aa66356ef43d96cdd18906b13bf5d8218da), [`513c6aa6`](https://github.com/riccardoperra/codeimage/commit/513c6aa66356ef43d96cdd18906b13bf5d8218da)]:
+  - @codeimage/atomic-state@1.0.0
+  - @codeimage/ui@0.10.0
+  - @codeimage/config@8.1.0
+  - @codeimage/highlight@0.10.5
+
+## 1.0.10
+
+### Patch Changes
+
+- [#433](https://github.com/riccardoperra/codeimage/pull/433) [`25c4fdf4`](https://github.com/riccardoperra/codeimage/commit/25c4fdf4560282bb1769fd14cbc7a5b5301855fd) Thanks [@riccardoperra](https://github.com/riccardoperra)! - Enable `experimental_optimizeFontLoading` for svg export
+
+- Updated dependencies [[`52d3cab6`](https://github.com/riccardoperra/codeimage/commit/52d3cab6a9ff446287380229fd7dfd0eb4c4afef), [`25c4fdf4`](https://github.com/riccardoperra/codeimage/commit/25c4fdf4560282bb1769fd14cbc7a5b5301855fd), [`f38633d4`](https://github.com/riccardoperra/codeimage/commit/f38633d4ae89bae1c3a40bdedf4b8fb94adde689)]:
+  - @codeimage/highlight@0.10.5
+  - @codeimage/dom-export@1.11.0
+  - @codeimage/api@0.1.1
+  - @codeimage/config@8.0.7
+
+## 1.0.9
+
+### Patch Changes
+
+- [#429](https://github.com/riccardoperra/codeimage/pull/429) [`1b042f82`](https://github.com/riccardoperra/codeimage/commit/1b042f82f2798b7d23936235e93811e69a3fce1b) Thanks [@riccardoperra](https://github.com/riccardoperra)! - feat(app/config): vue highlighting support
+
+- Updated dependencies [[`1b042f82`](https://github.com/riccardoperra/codeimage/commit/1b042f82f2798b7d23936235e93811e69a3fce1b)]:
+  - @codeimage/config@8.0.6
+
+## 1.0.8
+
+### Patch Changes
+
+- [#427](https://github.com/riccardoperra/codeimage/pull/427) [`716d7ee0`](https://github.com/riccardoperra/codeimage/commit/716d7ee06f73112d6bdad640382950827235ed49) Thanks [@riccardoperra](https://github.com/riccardoperra)! - fix: umami is not defined for some browsers
+
+## 1.0.7
+
+### Patch Changes
+
+- [#425](https://github.com/riccardoperra/codeimage/pull/425) [`ca74f973`](https://github.com/riccardoperra/codeimage/commit/ca74f97310ae3bc0db54719ee414fed108888cdc) Thanks [@riccardoperra](https://github.com/riccardoperra)! - fix: fix set shadow none value
+
+## 1.0.6
+
+### Patch Changes
+
+- [#421](https://github.com/riccardoperra/codeimage/pull/421) [`87e2f7e`](https://github.com/riccardoperra/codeimage/commit/87e2f7e0b67bef02bb0ca8080670857aea358d4f) Thanks [@max-programming](https://github.com/max-programming)! - feat: added Cascadia Code font
+
 ## 1.0.5
 
 ### Patch Changes

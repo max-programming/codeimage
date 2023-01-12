@@ -1,5 +1,29 @@
 # @codeimage/highlight
 
+## 8.1.0
+
+### Minor Changes
+
+- [`513c6aa6`](https://github.com/riccardoperra/codeimage/commit/513c6aa66356ef43d96cdd18906b13bf5d8218da) Thanks [@riccardoperra](https://github.com/riccardoperra)! - Add prettier language formatting support
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @codeimage/highlight@0.10.5
+
+## 8.0.7
+
+### Patch Changes
+
+- Updated dependencies [[`52d3cab6`](https://github.com/riccardoperra/codeimage/commit/52d3cab6a9ff446287380229fd7dfd0eb4c4afef)]:
+  - @codeimage/highlight@0.10.5
+
+## 8.0.6
+
+### Patch Changes
+
+- [#429](https://github.com/riccardoperra/codeimage/pull/429) [`1b042f82`](https://github.com/riccardoperra/codeimage/commit/1b042f82f2798b7d23936235e93811e69a3fce1b) Thanks [@riccardoperra](https://github.com/riccardoperra)! - feat(app/config): vue highlighting support
+
 ## 8.0.5
 
 ### Patch Changes
